@@ -9,7 +9,7 @@ sufixo = input(f'digite os caracteres que ficarão DEPOIS das palavras já exist
 
 
 # abrir o arquivo de texto original para leitura
-with open(os.path.join(pasta, "documento.txt"), "r") as arquivo_original:
+with open(os.path.join(local, "documento.txt"), "r") as arquivo_original:
     # ler o conteúdo do arquivo em uma variável
     conteudo = arquivo_original.read()
 
@@ -29,6 +29,6 @@ for palavra in palavras:
 novo_conteudo = " ".join(palavras_modificadas)
 
 # abrir um novo arquivo de texto para escrita
-with open(os.path.join(pasta, "resultado.txt"), "w") as arquivo_modificado:
+with open(os.path.join(local, "resultado.txt"), "w") as arquivo_modificado:
     # escrever o conteúdo modificado no novo arquivo
     arquivo_modificado.write(novo_conteudo)
